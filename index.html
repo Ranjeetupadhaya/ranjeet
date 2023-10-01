@@ -1,129 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <style type="text/css">
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        header{
-            width: 100%;
-            height: 100vh;
-            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url("Background.jpg");
-            background-size: cover;
-        }
-        nav{
-            width: 100%;
-            height: 100px;
-            background-size: cover;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-family: sans-serif;
-        }
-        .logo{
-            font-size: 2em;
-            letter-spacing: 2px;
-
-        }
-        .Menu a{
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 20px;
-            position: relative;
-        }
-        .Menu a:before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            border-bottom: 2px solid orange;
-            transition: 0.4s linear;
-        }
-
-        .Menu a:hover:before{
-            width: 90%;
-        }
-
-        .Register a{
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 20px;
-            background: orange;
-            border-radius: 5px;
-            transition: 0.4s linear;
-        }
-
-        .Register a:hover{
-            background: transparent;
-            border: 1px solid red;
-        }
-        .h-txt{
-            max-width: 650px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            text-align: center;
-            color: white;
-        }
-        .h-txt span{
-            letter-spacing: 5px;
-        }
-
-        .h-txt h1{
-            font-size: 3.5em;
-        }
-
-        .h-txt a{
-            text-decoration: none;
-            background: orange;
-            color: white;
-            padding: 15px,25px;
-            letter-spacing: 5px;
-            transition: 0.4s linear;
-        }
-        .h-txt a:hover{
-        background: transparent;
-            border: 1px solid red;
-        }
-    </style>
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <b>World-Tour</b>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">India</p>
             </div>
-            <div class="Menu">
-                <a href="#"><b>Home</b></a>
-                <a href="#"><b>Hill Stations</b></a>
-                <a href="#"><b>Best Offer's</b></a>
-                <a href="#"><b>Contact Us</b></a>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </select>
+        </div>
+
+        <div class="nav-signin border">
+            <p class="sign-first">Hello ,sign in</p>
+            <p class="sign-second">Accounts & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+            <p class="sign-first">Returns</p>
+            <p class="sign-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="sign-second">Cart</p>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <p class="border">Todays Deals</p>
+            <p class="border">Customer Service</p>
+            <p class="border">Registery</p>
+            <p class="border">Gift Cards</p>
+            <p class="border">Sell</p>
+        </div>
+        <div class="panel-deals border">
+            Shop deals in Electronics
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#"> Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                <h2>Clothes</h2>
+                <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                <p>See more</p>
             </div>
-            <div class="Register">
-                <a href="#">Register</a>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Health and Personal Care</h2>
+                <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                <p>See more</p>
             </div>
-        </nav>
-        <section class="h-txt">
-            <span><b>Enjoy</b></span>
-            <h1><b>International Travel Agency</b></h1>
-            <br>
-            <a href="#"><b>Book Your Trip Now</b></a>
-        </section>
-</header>   
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Furniture</h2>
+                <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Beauty picks</h2>
+                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Pet Care</h2>
+                <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>New arrival in Toys</h2>
+                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Discover Fashion Trends</h2>
+                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Connect with Us</p>
+                <a> Facebook</a>
+                <a>Twitter</a>
+                <a>Instagram</a>
+
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell on Amazon</a>
+                <a>Sell under Amazon Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Amazon Global Selling</a>
+                <a>Become an Affiliate</a>
+                <a>Fulfilment by Amazon</a>
+                <a>Advertise Your Products</a>
+                <a>mazon Pay on Merchants</a>
+            </ul>
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Yours Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
